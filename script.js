@@ -1,15 +1,14 @@
-function init(){
-  const button = document.getElementById("entrybutton");
-  const input = document.getElementById("entryinput");
-  const output = document.getElementById("textoutput");
+function init() {
+    const button = document.getElementById("alertButton"); // match HTML ID
+    const input = document.getElementById("entryinput");
+    const output = document.getElementById("textoutput");
 
-  button.addEventListener("click", function() {
-    const usertext = input.value;
-      alert("Viktor Fernandez: " + usertext);
+    button.addEventListener("click", function() {
+        const usertext = input.value;
+        alert("Viktor Fernandez: " + usertext);
 
-    output.textcontent = usertext;
-   
-  });
+        output.textContent = usertext; // fixed capitalization
+    });
 }
 
 window.addEventListener('load', init);
