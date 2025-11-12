@@ -1,46 +1,54 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 50px;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  border: 2px solid #ccc;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  background-color: #f9f9f9;
 }
 
 h1 {
-    font-size: 28px;
-    font-weight: bold;
-}
-
-p {
-    font-size: 16px;
-    margin-bottom: 30px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 input {
-    width: 350px;
-    padding: 8px;
-    font-size: 14px;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  font-size: 16px;
 }
 
-#alertDiv {
-    background-color: #c70000; /* red */
-    color: white;
-    width: 300px;
-    height: 120px;
-    line-height: 120px;
-    margin: 20px auto;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-    box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
-    user-select: none;
+.button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
-#alertDiv:hover {
-    background-color: #990000;
+.button:hover {
+  background-color: #0056b3;
 }
 
 h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 20px;
+  margin-top: 25px;
+  color: #555;
 }
