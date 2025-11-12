@@ -1,5 +1,3 @@
-function init(){
-//add your javascrip between these two lines of code
 document.addEventListener("DOMContentLoaded", function () {
 
     const btn = document.getElementById("alertDiv");
@@ -7,23 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const headline = document.getElementById("myHeadline");
 
     btn.addEventListener("click", function () {
-        const text = input.value;
+        const text = input.value.trim();
 
-        // Show alert with your name + input text
+        // Show alert with name + input text
         alert("Viktor Fernandez: " + text);
 
-        // Set H2 text to the input value only
-        headline.textContent = text;
+        // Update headline with input text only
+        headline.textContent = text || "Show results here";
     });
 
 });
-
- 
-
-
-
-
-
-
-
-window.addEventListener('load', init);
