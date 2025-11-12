@@ -1,17 +1,15 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const alertDiv = document.getElementById("alertDiv");
-  const input = document.getElementById("userInput");
-  const result = document.getElementById("result");
+function init(){
+  const button = document.getElementById("entrybutton");
+  const input = document.getElementById("entryinput");
+  const output = document.getElementById("textoutput");
 
-  alertDiv.addEventListener("click", function() {
-    const text = input.value.trim();
-    if (text === "") {
-      alert("Please enter a message.");
-      return;
-    }
-    // Show alert with your name and input
-    alert(`Viktor Fernandez: ${text}`);
-    // Update the h2 text
-    result.textContent = text;
+  button.addEventListener("click", function() {
+    const usertext = input.value;
+      alert("Viktor Fernandez: " + usertext);
+
+    output.textcontent = userText;
+   
   });
-});
+}
+
+window.addEventListener('load', init);
