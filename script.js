@@ -1,17 +1,17 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const alertBtn = document.getElementById("alertBtn");
-  const userInput = document.getElementById("userInput");
-  const headline = document.getElementById("headline");
+document.addEventListener("DOMContentLoaded", function() {
+  const alertDiv = document.getElementById("alertDiv");
+  const input = document.getElementById("userInput");
+  const result = document.getElementById("result");
 
-  alertBtn.addEventListener("click", () => {
-    const inputValue = userInput.value.trim();
-
-    if (inputValue === "") {
-      alert("Please enter some text!");
+  alertDiv.addEventListener("click", function() {
+    const text = input.value.trim();
+    if (text === "") {
+      alert("Please enter a message.");
       return;
     }
-
-    alert(`Viktor Fernandez: ${inputValue}`);
-    headline.textContent = inputValue;
+    // Show alert with your name and input
+    alert(`Viktor Fernandez: ${text}`);
+    // Update the h2 text
+    result.textContent = text;
   });
 });
