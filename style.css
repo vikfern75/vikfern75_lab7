@@ -1,20 +1,45 @@
+/* Center all text inside elements with class "center" */
 .center {
-  text-align: center;
+    text-align: center;
 }
+
+/* Container for input and button */
 #container {
-  width: 400px;
-  margin: 50px auto 0;
+    width: 400px;
+    margin: 50px auto 0;
 }
+
+/* Input box styling */
 #entryinput {
-  width: 100%;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
 }
-#entrybutton {
-  width: 200px;
-  text-align: center;
-  color: #fff;
-  background-color: #c00;
-  padding: 2em 0;
-  margin: 20px auto;
-  font-size: 24px;
-  font-weight: bold;
+
+/* Button styling */
+#alertButton {
+    width: 200px;
+    display: block;
+    margin: 0 auto; /* centers the button */
+    padding: 15px 0;
+    font-size: 16px;
+    color: #fff;
+    background-color: #c00; /* red color */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+#alertButton:hover {
+    background-color: #a00; /* darker red on hover */
+}
+
+/* Output heading styling */
+#textoutput {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
 }
