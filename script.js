@@ -1,15 +1,10 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const alertDiv = document.getElementById("alertDiv");
-  const input = document.getElementById("userInput");
-  const result = document.getElementById("result");
+function showMessage() {
+  const input = document.getElementById("entryinput").value;
+  const output = document.getElementById("output");
 
-  alertDiv.addEventListener("click", function() {
-    const text = input.value.trim();
-    if (text === "") {
-      alert("Please enter a message.");
-      return;
-    }
-    alert(`Viktor Fernandez: ${text}`);
-    result.textContent = text;
-  });
-});
+  if (input.trim() === "") {
+    output.textContent = "Please enter something!";
+  } else {
+    output.textContent = `You entered: ${input}`;
+  }
+}
