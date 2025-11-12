@@ -9,9 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
       alert("Please enter a message.");
       return;
     }
-    // Show alert with your name and input
     alert(`Viktor Fernandez: ${text}`);
-    // Update the h2 text
     result.textContent = text;
   });
 });
