@@ -1,53 +1,20 @@
-body {
-  background-color: white;
+.center {
   text-align: center;
-  font-family: "Times New Roman", serif;
-  margin-top: 30px;
 }
-
-h1 {
-  font-size: 2em;
-  font-weight: bold;
+#container {
+  width: 400px;
+  margin: 50px auto 0;
 }
-
-p {
-  font-size: 1.1em;
-  margin-bottom: 20px;
+#entryinput {
+  width: 100%;
 }
-
-.container {
-  margin-top: 30px;
-}
-
-input {
-  width: 500px;
-  height: 25px;
-  font-size: 1em;
-  margin-bottom: 20px;
+#entrybutton {
+  width: 200px;
   text-align: center;
-  border: 1px solid #aaa;
-  border-radius: 3px;
-}
-
-#alertDiv {
-  background-color: #cc0000;
-  color: white;
-  width: 240px;
-  height: 120px;
-  line-height: 120px;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 1.5em;
+  color: #fff;
+  background-color: #c00;
+  padding: 2em 0;
+  margin: 20px auto;
+  font-size: 24px;
   font-weight: bold;
-  cursor: pointer;
-}
-
-#alertDiv:hover {
-  background-color: #a00000;
-}
-
-h2 {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-top: 30px;
 }
