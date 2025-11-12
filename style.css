@@ -25,10 +25,12 @@ input {
   font-size: 1em;
   margin-bottom: 20px;
   text-align: center;
+  border: 1px solid #aaa;
+  border-radius: 3px;
 }
 
 #alertDiv {
-  background-color: #cc0000; /* Red */
+  background-color: #cc0000;
   color: white;
   width: 240px;
   height: 120px;
