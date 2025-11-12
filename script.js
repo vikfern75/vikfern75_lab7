@@ -7,7 +7,7 @@ function init(){
     const usertext = input.value;
       alert("Viktor Fernandez: " + usertext);
 
-    output.textcontent = userText;
+    output.textcontent = usertext;
    
   });
 }
